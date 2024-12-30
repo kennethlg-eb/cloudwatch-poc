@@ -1,7 +1,5 @@
-import { initCloudwatch, logToCloudWatch } from "@/util/cloudwatch";
+import { logToCloudWatch } from "@/util/cloudwatch";
 import { NextApiRequest, NextApiResponse } from "next";
-
-initCloudwatch();
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
